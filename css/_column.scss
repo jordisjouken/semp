@@ -1,0 +1,77 @@
+.column {
+	@include media($s-contained) {
+		@include span-columns(4);
+	}
+
+	&--one-third {
+		@include media($m) {
+			@include span-columns(4);
+		}
+	}
+
+	&--two-third {
+		@include media($m) {
+			@include span-columns(8);
+		}
+	}
+
+	&--one-quarter {
+		@include media($m) {
+			@include span-columns(3);
+		}
+	}
+
+	&--three-quarter {
+		@include media($m) {
+			@include span-columns(9);
+		}
+	}
+
+	&--half {
+		@include media($m) {
+			@include span-columns(6);
+		}
+	}
+
+	&--whole {
+		@include media($m) {
+			@include span-columns(12);
+		}
+	}
+
+	&--whole-shift-two {
+		@include media($m) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		margin-bottom: 25px;
+	}
+
+	&--omega {
+		@include omega();
+	}
+
+	&--margin-top {
+		margin-top: $s-spacing;
+
+		@include media($m) {
+			margin-top: $m-spacing;
+		}
+
+		@include media($l) {
+			margin-top: $l-spacing;
+		}
+	}
+
+	&--margin-bottom {
+		margin-bottom: $s-spacing;
+
+		@include media($m) {
+			margin-bottom: $m-spacing;
+		}
+
+		@include media($l) {
+			margin-bottom: $l-spacing;
+		}
+	}
+}

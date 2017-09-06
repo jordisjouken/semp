@@ -1,0 +1,138 @@
+// Columns.
+$s-columns: 						              4;
+$m-columns: 						              12;
+$l-columns: 						              12;
+
+// Breakpoint sizes.
+$m-breakpoint: 						            768px;
+$l-breakpoint: 						            1025px;
+
+// Grid.
+$column: 							                60px;
+$gutter: 							                40px;
+$grid-columns: 						            $s-columns;
+$max-width: 						              1440px;
+$visual-grid: 						            false;
+$visual-grid-color:					          blue;
+$visual-grid-index:					          front;
+
+// Spacing.
+$s-spacing: 						              30px;
+$m-spacing: 						              50px;
+$l-spacing: 						              50px;
+
+// Sizes.
+$font-circle:                         30px;
+$font-call-title:                     20px;
+$font-slide-title:                    20px;
+$font-slide-subtitle:                 15px;
+
+$height-nav-top:                      60px;
+$height-nav-top--m:                   45px;
+
+$height-header-m:                     100px;
+$height-header:                       125px;
+
+$height-call-to-action-m:             100px;
+$height-call-to-action:               200px;
+$height-width-circle-m:               50px;
+$height-width-circle:                 100px;
+
+$height-hamburger-slice:              3px;
+$height-hamburger:                    16px;
+
+$height-logo:                         40px;
+$height-logo-m:                       30px;
+
+$height-error:                        200px;
+
+$height-navigation-min:               350px;
+
+$height-slideshow-m:                  350px;
+$height-slideshow:                    450px;
+
+$height-dot:                          7px;
+
+//width
+$width-icon:                          20px;
+$width-hamburger:                     28px;
+$width-logo-m:                        170px;
+$width-logo:                          220px;
+$width-navigation-top__icon:          20px;
+$width-dot:                           20px;
+
+$padding-icon:                        30px;
+$padding-navigation:                  30px;
+$padding-icon-m:                      15px;
+$padding-button:                      15px 30px;
+$padding-sub-menu:                    15px 15px 0 15px;
+$padding-nav-link:                    10px;
+$padding-service:                     25px;
+$padding-service-title:               25px 25px 0 25px;
+$padding-service-text:                0 25px;
+$padding-service-button:              10px 25px;
+$padding-slide-content-m:             0 30px;
+$padding-slide-content:               0 25%;
+
+$radius-button:                       50px;
+$radius-circle:                       50%;
+$radius-dot:                          5px;
+
+$margin-default:                      25px;
+$margin-logo-top-m:                   35px;
+$margin-logo-top:                     45px;
+$margin-call-title:                   10px;
+$margin-hamburger:                    42px;
+$margin-navigation-top--buttom:       100px;
+$margin-navigation-top__text:         15px;
+$margin-nav:                          52px;
+$margin-nav-link:                     20px;
+$margin-nav-link-l:                   20px;
+$margin-sub-menu:                     0px 0px 12px 0px;
+$margin-news-image:                   75px;
+$margin-news-title:                   15px;
+$margin-service-m:                    50px;
+$margin-service:                      110px;
+$margin-service-icon:                 5px;
+$margin-dot:                          0 9px;
+
+$position-top-nav:                    100px;
+$position-bottom-slide-con:            65px;
+$position-bottom-p-dot:               30px;
+
+
+
+
+
+// Breakpoints.
+$s-contained:					              	new-breakpoint(max-width ($m-breakpoint - 1) $s-columns);
+$m: 								                  new-breakpoint(min-width $m-breakpoint $m-columns);
+$m-contained:                         new-breakpoint(min-width $m-breakpoint max-width ($l-breakpoint - 1) $m-columns);
+$l: 								                  new-breakpoint(min-width $l-breakpoint $l-columns);
+
+// Fonts.
+
+// Colors.
+$white:                               rgb(255, 255, 255);
+$grey-5:                              rgb(245, 245, 245);
+$grey-10:                             #e2e6e7;
+$grey-15:                             rgb(153, 153, 160);
+$grey-20:                             rgb(75, 75, 75);
+$blue:                                rgb(102, 161, 195);
+$blue-dark:                           rgb(41, 80, 103);
+$black:                               rgb(0, 0, 0);
+
+// Descriptive colors.
+$color-light:                         $white;
+$color-background:                    $grey-5;
+$color-text-default:                  $grey-20;
+$color-text-lighter:                  $grey-15;
+$color-text-light:                    $grey-5;
+$color-text-blue:                     $blue;
+$color-text-blue-darker:              $blue-dark;
+$color-text-darker:                   $black;
+$color-overlay:                       rgba($black, .7);
+$color-action:                        $blue;
+$color-hover-blue:                    $blue-dark;
+
+// Other.

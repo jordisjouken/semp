@@ -1,0 +1,70 @@
+.call-to-action {
+  float: left;
+  height: $height-call-to-action-m;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: $margin-default;
+
+  background-color: $color-light;
+  @include media($m) {
+    height: $height-call-to-action;
+    padding: 50px 0;
+  }
+  &__icon {
+    color: $color-text-blue;
+    font-size: 24px !important;
+
+    @include media($m) {
+      font-size: 2em !important;
+    }
+    &--circle {
+      font-size: $font-circle;
+      height: $height-width-circle-m;
+      width: $height-width-circle-m;
+      line-height: $height-width-circle-m !important;
+      color: $color-text-blue;
+      float: left;
+      text-align: center;
+      border: 1px solid $grey-10;
+      border-radius: $radius-circle;
+      @include media($m) {
+        height: $height-width-circle;
+        width: $height-width-circle;
+        line-height: $height-width-circle + 20 !important;
+      }
+    }
+  }
+  &__title {
+    float: left;
+    display: block;
+    margin-bottom: $margin-call-title;
+
+
+    color: $color-text-default;
+    font-weight: 600;
+    font-size: $font-call-title;
+    text-transform: uppercase;
+
+  }
+
+  &__content {
+    float: left;
+    color: $color-text-default;
+    clear: both;
+
+
+    &--box {
+      display: none;
+      float: left;
+      margin-left: $margin-default;
+      margin-top: $margin-default;
+      @include media($m) {
+        display: block;
+      }
+    }
+  }
+  &__button {
+    float: right;
+    margin-top: 0px !important;
+  }
+}

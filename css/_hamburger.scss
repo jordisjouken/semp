@@ -1,0 +1,73 @@
+.hamburger {
+  visibility: none;
+  display: block;
+  position: relative;
+  float: right;
+
+  width: $width-hamburger;
+  height: $height-hamburger;
+
+  margin-top: $margin-hamburger;
+  cursor: pointer;
+
+  @include media($m) {
+    visibility: hidden;
+  }
+
+// the hamburger slices
+	&__slice {
+    display: block;
+    position: absolute;
+    height: $height-hamburger-slice;
+    width: $width-hamburger;
+    border-radius: 2px;
+    background: $color-text-blue;
+
+		transition: all 0.2s ease-in-out;
+
+		&:nth-child(1) {
+			top: 0px;
+
+      @at-root .hamburger:hover & {
+        left: -3px;
+      }
+      @at-root .hamburger--active & {
+				top: 4px;
+
+				transform: rotate(45deg);
+
+			}
+      @at-root .hamburger--active:hover & {
+        left: 0px;
+      }
+		}
+
+		&:nth-child(2) {
+			top: 6px;
+      @at-root .hamburger:hover & {
+        left: 3px;
+      }
+
+      @at-root .hamburger--active & {
+				opacity: 0;
+			}
+
+		}
+
+		&:nth-child(3) {
+			top: 12px;
+      @at-root .hamburger:hover & {
+        left: -3px;
+      }
+      @at-root .hamburger--active & {
+				top: 4px;
+
+				transform: rotate(-45deg);
+
+			}
+      @at-root .hamburger--active:hover & {
+        left: 0px;
+      }
+		}
+	}
+}

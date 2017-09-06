@@ -1,0 +1,77 @@
+.navigation-top {
+
+  height: $height-nav-top--m;
+  width: 100%;
+  &--margin-bottom{
+    margin-bottom: $margin-navigation-top--buttom;
+  }
+  @include media($m) {
+		height: $height-nav-top;
+	}
+  @include media($m) {
+    &__list--right {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: ($padding-icon * 13.5);
+      text-align: right;
+
+    }
+  }
+  &__item{
+    &-contact{
+      text-align: right;
+      color: $color-text-lighter;
+    }
+    &-social{
+      text-align: right;
+    }
+  }
+  &__text {
+    display: none;
+    @include media($m) {
+  		display: inline-block;
+
+      margin-left: $margin-navigation-top__text;
+  	}
+  }
+  &__link {
+    float: left;
+    display: inline-block;
+    height: $height-nav-top--m;
+    padding: 0px $padding-icon-m;
+    border-left: 1px solid $grey-10;
+    font-weight: bold;
+    line-height: $height-nav-top--m;
+    text-decoration: none;
+    color: $color-text-lighter;
+
+    @include media($m) {
+  		padding: 0px $padding-icon - 5;
+
+  	}
+    &:last-child {
+      border-right: 1px solid $grey-10;
+    }
+    &:hover {
+      background-color: $color-text-blue;
+      color: $color-text-light;
+    }
+    @include media($m) {
+  		display: inline-block;
+      height: $height-nav-top;
+      line-height: $height-nav-top;
+  	}
+  }
+  &__icon {
+    display: inline-block;
+    width: $width-navigation-top__icon;
+
+    text-align: center;
+
+    color: $color-text-blue;
+    @at-root .navigation-top__link:hover & {
+      color: $color-light;
+    }
+  }
+}

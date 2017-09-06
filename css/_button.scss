@@ -1,0 +1,21 @@
+.button {
+  padding: $padding-button;
+  margin-top: $margin-default;
+
+  background: $color-text-blue;
+
+  border: 2px solid $color-text-blue;
+  border-radius: $radius-button;
+
+  color: $color-light;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background .3s ease-in-out;
+  &:hover {
+    background: none;
+    color: $color-text-blue;
+  }
+}

@@ -1,0 +1,21 @@
+.news {
+  background: $color-light;
+  &__image {
+    float: left;
+    margin-bottom: $margin-news-image;
+    width: 100%;
+    height: auto;
+
+  }
+  &__date {
+    color: $color-text-lighter;
+  }
+  &__title {
+    margin-top: $margin-news-title;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

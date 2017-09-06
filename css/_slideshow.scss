@@ -1,0 +1,127 @@
+.slideshow {
+    float: left;
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: $height-slideshow-m;
+    @include media($m){
+      height: $height-slideshow;
+    }
+}
+
+.slideshow--enabled {
+    position: relative
+}
+
+.slideshow--enabled:focus {
+    outline: none
+}
+
+.slideshow--enabled .slideshow--draggable {
+    tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.slideshow__viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.slideshow--enabled.slideshow--draggable .slideshow__viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.slideshow--enabled.slideshow--draggable .slideshow__viewport--dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.slideshow__slide {
+    width: 100%;
+    height: 350px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    @include media($m) {
+      height: 450px;
+    }
+}
+
+.slideshow__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(-180deg, transparent 45%, rgba(0, 0, 0, 0.64) 100%)
+}
+
+.slideshow__content {
+    position: absolute;
+    width: 100%;
+    bottom: $position-bottom-slide-con;
+    padding: $padding-slide-content-m;
+
+    text-align: center;
+    @include media($m){
+      padding: $padding-slide-content;
+    }
+}
+
+
+.slideshow__title {
+    font-size: $font-slide-title;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-light;
+}
+
+.slideshow__sub-title {
+    font-size: $font-slide-subtitle;
+    font-weight: 600;
+    color: $color-light;
+}
+
+
+.slideshow__page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: $position-bottom-p-dot;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+}
+
+.slideshow__dot {
+    display: inline-block;
+    width: $width-dot;
+    height: $height-dot;
+    margin: $margin-dot;
+
+    background: $color-light;
+    border-radius: $radius-dot;
+
+    opacity: 0.5;
+    cursor: pointer;
+    &--selected {
+        opacity: 1
+    }
+}
+
+.slideshow__slide--1 {
+  background-image: url('https://www.semperphi.nl/wp-content/uploads/2016/03/gouw-systeemwanden-800x267.jpg');
+  @include media($m) {
+    background-image: url('https://www.semperphi.nl/wp-content/uploads/2016/03/gouw-systeemwanden-1440x480.jpg');
+  }
+}

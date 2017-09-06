@@ -1,0 +1,57 @@
+.service {
+  margin-bottom: $margin-service-m;
+  padding-right: $padding-service;
+  @include media($m){
+    margin-bottom: $margin-service;
+  }
+  &__image {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: auto;
+  }
+  &__box {
+    display: block;
+    position: absolute;
+    left: 25px;
+    right: 0px;
+    bottom: -25px;
+    background: $color-light;
+  }
+  &__title {
+    padding: $padding-service-title;
+  }
+  &__text {
+    padding: $padding-service-text;
+  }
+  &__button {
+    display: inline-block;
+    width: 100%;
+    padding: $padding-service-button;
+    margin-top: $padding-service;
+
+    background: $color-text-blue;
+    color: $color-light;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: background .3s ease-in-out;
+    &--icon {
+      color: $color-light;
+      float: right;
+      margin-top: $margin-service-icon;
+
+      transition: transform .3s ease-in-out;
+      @at-root .service__button:hover & {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+      }
+    }
+    &:hover {
+      background: $color-hover-blue;
+    }
+  }
+}

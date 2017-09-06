@@ -1,0 +1,11 @@
+.error {
+  &__hero {
+    height: $height-error;
+    width: 100%;
+
+    background: url(https://www.semperphi.nl/wp-content/uploads/2016/03/gouw-systeemwanden-1440x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

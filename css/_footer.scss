@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px solid $grey-10;
+  &__link {
+    text-decoration: none;
+    &:hover {
+      color: $color-hover-blue;
+    }
+    &--decoration{
+      text-decoration: underline;
+    }
+  }
+}

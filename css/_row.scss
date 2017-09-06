@@ -1,0 +1,63 @@
+.row {
+	@include outer-container();
+
+	&--padding-top {
+		@include media($s-contained) {
+			padding-top: $s-spacing;
+		}
+
+		@include media($m-contained) {
+			padding-top: $m-spacing;
+		}
+
+		@include media($l) {
+			padding-top: $l-spacing;
+		}
+	}
+
+	&--padding-bottom {
+		@include media($s-contained) {
+			padding-bottom: $s-spacing;
+		}
+
+		@include media($m-contained) {
+			padding-bottom: $m-spacing;
+		}
+
+		@include media($l) {
+			padding-bottom: $l-spacing;
+		}
+	}
+
+	&--padding-side {
+		@include media($s-contained) {
+			padding-right: $s-spacing;
+			padding-left: $s-spacing;
+		}
+
+		@include media($m-contained) {
+			padding-right: $m-spacing;
+			padding-left: $m-spacing;
+		}
+
+		@include media($l) {
+			padding-right: $l-spacing;
+			padding-left: $l-spacing;;
+		}
+	}
+	&--padding-none {
+		@include media($s-contained) {
+			padding: 0;
+
+		}
+		@include media($m-contained) {
+			padding-right: $m-spacing;
+			padding-left: $m-spacing;
+		}
+
+		@include media($l) {
+			padding-right: $l-spacing;
+			padding-left: $l-spacing;;
+		}
+	}
+}

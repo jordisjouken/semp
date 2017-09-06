@@ -1,0 +1,39 @@
+.header {
+
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: $height-header-m;
+  border-bottom: 1px solid $color-light;
+  background: rgba($color-light, 0.9);
+
+  @include media($m){
+    height: $height-header;
+  }
+  &--fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 2px 2px rgba($color-text-darker, 0.1);
+  }
+  &__logo {
+    display: inline-block;
+    float: left;
+    width: $width-logo-m;
+    height: $height-logo;
+    margin-top: $margin-logo-top-m;
+    background-image: url("../img/logo-semper-phi.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform .2s ease-in-out;
+    transform-origin: center left;
+    @include media($m){
+      width: $width-logo;
+      height: $height-logo;
+      margin-top: $margin-logo-top;
+    }
+    &:hover {
+      transform: scale(1.05)
+    }
+  }
+}
